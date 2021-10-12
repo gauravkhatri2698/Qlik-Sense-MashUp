@@ -41,6 +41,6 @@ router.get('/mashup',function(req,res){
     authController.ticket(req,res);
 })
 router.get("/config",function(req,res){
-    res.render("config", {name: req.session.name});
+    res.render("config", {name: req.session.name, email: req.session.emailAddress});
 })
 module.exports = router;

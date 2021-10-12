@@ -1,73 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 
-html,
-body {
-    height: 100%
-}
-
-body {
-    display: grid;
-    font-family: 'Manrope', sans-serif;
-    background: #000;
-    color: #fff;
-}
 .input-box{
     color: white !important;
     font-weight: bold !important;
 }
 
-.container{
-    margin-top: -7em !important;
+.users_list{
+    background-color: grey !important;
 }
 
 .contact input {
     margin-top: 10px;
-    background: #0097A7;
+    background:white;
+    color: black;
     /* caret-color: #fff; */
-    border: 1px solid #0097A7
+    border: 1px solid black
 }
 
 .contact textarea {
     margin-top: 10px;
-    background: #0097A7;
+    background: white;
+    color: black;
     /* caret-color: #fff; */
-    border: 1px solid #0097A7
+    border: 1px solid black
 }
 
 .contact input:focus {
     margin-top: 10px;
-    color: #fff;
-    background: #0097A7;
-    border: 1px solid #0097A7
+    color: black;
+    background: white;
+    border: 1px solid black
 }
 
 .contact textarea:focus {
     margin-top: 10px;
-    color: #fff;
-    background: #0097A7;
-    border: 1px solid #0097A7
+    color:black;
+    background: white;
+    border: 1px solid black
 }
 
 .contact input::placeholder {
-    color: #fff;
+    color:black;
     font-weight: 500
 }
 
 .contact textarea::placeholder {
-    color: #fff;
+    color: black;
     font-weight: 500
 }
 
 .btn-success {
-    color: #fff;
-    background-color: #8E24AA;
-    border-color: #8E24AA
+    color:black;
+    background-color:red;
+    border-color: red
 }
 
 .btn-success:hover {
-    color: #fff;
-    background-color: #8E24AA;
-    border-color: #8E24AA
+    color:black;
+    background-color: red;
+    border-color: red
 }
 
 .btn-success.focus,
@@ -80,7 +71,11 @@ form{
 }
 .btn-success:not(:disabled):not(.disabled):active,
 .show>.btn-success.dropdown-toggle {
-    color: #fff;
-    background-color: #8E24AA;
-    border-color: #8E24AA
+    color:black;
+    background-color: red;
+    border-color: red
+}
+
+.list{
+    margin-top: 10em;
 }

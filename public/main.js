@@ -28,13 +28,13 @@ require(["js/qlik"], function (qlik) {
 
     //callbacks -- inserted here --
     //open apps -- inserted here --
-    var app = qlik.openApp('4096724e-2b40-4edb-82e9-96bae42ad088', config);
-
+    var app = qlik.openApp(localStorage.getItem("appId"), config);
+    
     //get objects -- inserted here --
-    app.getObject('QV01','JeQuxwe');
-    app.getObject('QV02','fqnBmpX');
-    app.getObject('QV03','sDqbA');
-    app.getObject('QV04','dYQJT');
-    //create cubes and lists -- inserted here --
-
+    app.getObject('QV01',localStorage.getItem("object1"));
+    app.getObject('QV02',localStorage.getItem("object2"));
+    app.getObject('QV03',localStorage.getItem("object3"));
+    app.getObject('QV04',localStorage.getItem("object4"));
+    //create cubes and lists -- inserted here --    
 });
+

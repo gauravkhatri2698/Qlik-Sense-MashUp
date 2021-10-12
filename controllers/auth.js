@@ -77,7 +77,10 @@ exports.login = function (req, res) {
               req.session.loggedinUser = true;
               req.session.emailAddress = email;
               req.session.name = results[0].name;
-              res.render("main", {name: req.session.name});
+              res.render("main", {
+                name: req.session.name,
+                ticket: req.session.ticket,
+              });
             });
           }
         });
@@ -153,12 +156,13 @@ exports.listuser = function (req, res) {
         );
       }
 
-      setTimeout(()=>{
+      setTimeout(() => {
         console.log(array);
         res.render("listuser", {
           user: array,
+          name: req.session.name,
         });
-      },2000)
+      }, 2000);
     }
   });
 };
@@ -167,6 +171,36 @@ exports.ticket = function (req, res) {
   ticket.get_ticket_redirect(function (ticket) {
     res.render("mashup", {
       ticket: ticket,
+      name: req.session.name,
     });
   });
+};
+
+exports.addMashup = function (req, res) {
+  const name = req.body.name;
+  const appId = req.body.appId;
+  const object1 = req.body.object1;
+  const object2 = req.body.object2;
+  const object3 = req.body.object3;
+  const object4 = req.body.object4;
+  const email = req.session.emailAddress;
+
+  db.query(
+    "INSERT INTO mashup SET ?",
+    {
+      applicationId: appId,
+      email: email,
+      Object1Id: object1,
+      Object2Id: object2,
+      Object3Id: object3,
+      Object4Id: object4,
+    },
+    function (error, results) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log(results);
+      }
+    }
+  );
 };

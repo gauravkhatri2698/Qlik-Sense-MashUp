@@ -1,36 +1,91 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <h4>Node MySql</h4>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
-        </ul>
-    </nav>
-    
-    <div class="container mt-4">
-
-        <div class="jumbotron">
-            <h1 class="display-4">MashUp Generator Project</h1>
-            <p class="lead">In this project we will create mashup from tables</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Qlik Sense MashUp</title>
+  </head>
+  <body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+      style="height: 5em;"
+    >
+      <div class="container">
+        <span class="navbar-brand" style="margin-top: -0.6em;">Qlik Sense MashUp</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto">
+            <i class="fa fa-home fa-lg" style="margin-top: -1px;"></i>
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <a
+              class="btn btn-outline-primary active my-2 my-sm-0"
+              role="button"
+              href="/register"
+            >Sign Up</a>
+            <a
+              class="btn btn-outline-success active my-2 my-sm-0"
+              role="button"
+              href="/login"
+            >Sign In</a>
+          </form>
         </div>
+      </div>
+    </nav>
 
+    <div class="container list" style="margin-top: 3em;">
+      <div class="media">
+        <img
+          class="align-self-center"
+          src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6aaa723dd93ae3448dd214f0f6a434a7/qlik-sense.jpg"
+          alt="Generic placeholder image"
+          style="height: 20em; width: 20em; margin-left: 35%;"
+        />
+        <div class="media-body">
+          <h3 class="mt-0" style="color: green;">About Qlik</h3>
+          <div style="font-size: large;">
+            <p>Qlikʼs vision is a data-literate world, where everyone can use data
+            and analytics to improve decision-making and solve their most
+            challenging problems. Qlik provides an end-toend, real-time data
+            integration and analytics cloud platform to close the gaps between
+            data, insights and action.</p>
+          <p class="mb-0">By transforming data into Active Intelligence,
+            businesses can drive better decisions, improve revenue and
+            profitability, and optimize customer relationships. Qlik does
+            business in more than 100 countries and serves over 50,000 customers
+            around the world.</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

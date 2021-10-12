@@ -5,7 +5,7 @@ var request = require("request");
 var directory =
   "C:\\Users\\User\\OneDrive\\Documents\\Visual Studio 2017\\StartPages\\Node Qlik Mashup\\controllers\\certificates\\";
 
-var proxyRestUri = "https://qlikdemo.polestarllp.com:4243/qps/virproxy/"; //qps
+var proxyRestUri = "https://qlikdemo.polestarllp.com:4243/qps/virproxy/"; 
 var targetUri = 'https://qlikdemo.polestarllp.com/virproxy/hub';
 
 var get_ticket_redirect = function (callback) {
@@ -37,7 +37,7 @@ var get_ticket_redirect = function (callback) {
       console.log("== Got a ticket ==");
       console.log("Ticket: " + response.body.Ticket);
       console.log("TargetUri: " + proxyRestUri);
-      callback( response.body.Ticket); // This is the redirect URL!
+      callback( response.body.Ticket); 
     }
   });
 };
